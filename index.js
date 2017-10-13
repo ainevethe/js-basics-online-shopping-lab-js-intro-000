@@ -23,7 +23,7 @@ function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.")
     return;
-  } else {
+  } else if (cart.length === 1){
     for (var i = 0; i < cart.length; i++ ) {
       for (var item in cart[i]) {
       var price = cart[i][item];
