@@ -27,7 +27,7 @@ function viewCart() {
     for (var i = 0; i < cart.length; i++ ) {
       for (var item in cart[i]) {
       var price = cart[i][itemPrice];
-      console.log("In your cart, you have " + item + " at $" + itemPrice + ".")
+      console.log("In your cart, you have " + item + " at $")
     }
   }
 }
