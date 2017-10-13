@@ -27,6 +27,10 @@ function viewCart() {
     cartItem.push(Object.keys(cart[i])[0]);
   }
 
+  for (let i = 0; i < cart.length; i++) {
+    cartPrice.push(cart[i][cartItem[i]]);
+  }
+
 if (cart.length < 1) {
   console.log("Your shopping cart is empty.")
 }
