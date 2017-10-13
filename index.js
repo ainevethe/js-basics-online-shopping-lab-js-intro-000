@@ -21,32 +21,22 @@ function addToCart(item) {
 function viewCart() {
 
   var cartItem = [];
-  var cartPrice = [];
 
-  for (let i =0; i < cart.length; i++) {
-    cartItem.push(Object.keys(cart[i])[0]);
+  for (var i = 0; i < cart.length; i++) {
+    var item = Object.keys(cart[i])[0];
+    var itemPrice = cart[i][item]
+
+    cartItem.push(`${item} at $${itemPrice}`);
   }
 
-  for (let i = 0; i < cart.length; i++) {
-    cartPrice.push(cart[i][cartItem[i]]);
+  if (cartItem.length === 1) {
+    console.log("In your cart, you have " + cartItem[0] + ".")
+  } else if (cartItem.length === 2) {
+    console.log("In your cart, you have " + cartItem.join(" and ") + ".")
+  } else {
+    cartItem[cartItems.length - 1] = `and ${cartItems[cartItems.length -1]}`
+    console.log("In your cart, you have " + cartItem.join(", ")+ ".");
   }
-
-if (cart.length < 1) {
-  console.log("Your shopping cart is empty.")
-}
-
-if (cart.length === 1) {
-  console.log(`In your cart, you have ${cartItem[0]} at $${cartPrice[0]}.`)
-}
-
-if (cart.length === 2) {
-  console.log(`In your cart, you have ${cartItem[0]} at $${cartPrice[0]} and ${cartItem[1]} at $${cartPrice[1]}.`)
-}
-
-if (cart.length >=3) {
-
-}
-
 }
 
 
