@@ -26,14 +26,14 @@ function viewCart() {
   } else {
     for (var i = 0; i < cart.length; i++ ) {
       for (var item in cart[i]) {
-      var price = cart[i][item];
+      var price = cart[i][item];}
       if (cart.length === 1) {
       console.log("In your cart, you have " + item + " at $" + price + ".")
     }
     }
   }
 }
-}
+
 
 function total() {
   // write your code here
