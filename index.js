@@ -31,7 +31,8 @@ function viewCart() {
     }
   }
 }
-
+}
+}
 
 function total() {
   // write your code here
