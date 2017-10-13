@@ -20,22 +20,22 @@ function addToCart(item) {
 
 function viewCart() {
 
-  var cartItem = [];
+  var cartItems = [];
 
   for (var i = 0; i < cart.length; i++) {
     var item = Object.keys(cart[i])[0];
     var itemPrice = cart[i][item]
 
-    cartItem.push(`${item} at $${itemPrice}`);
+    cartItems.push(`${item} at $${itemPrice}`);
   }
 
-  if (cartItem.length === 1) {
-    console.log("In your cart, you have " + cartItem[0] + ".")
-  } else if (cartItem.length === 2) {
-    console.log("In your cart, you have " + cartItem.join(" and ") + ".")
+  if (cartItems.length === 1) {
+    console.log("In your cart, you have " + cartItems[0] + ".")
+  } else if (cartItems.length === 2) {
+    console.log("In your cart, you have " + cartItems.join(" and ") + ".")
   } else {
-    cartItem[cartItems.length - 1] = `and ${cartItems[cartItems.length -1]}`
-    console.log("In your cart, you have " + cartItem.join(", ")+ ".");
+    cartItems[cartItems.length - 1] = `and ${cartItems[cartItems.length -1]}`
+    console.log("In your cart, you have " + cartItems.join(", ")+ ".");
   }
 }
 
