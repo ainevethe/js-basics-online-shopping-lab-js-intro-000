@@ -25,7 +25,7 @@ function viewCart() {
     return;
   } else if (cart.length < 2){
 
-    console.log(" In your cart, you have " + (Object.keys([cart])) + " at $" +  + ".")
+    console.log(" In your cart, you have " + cart.item + " at $" +  + ".")
   }
 }
 
