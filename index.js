@@ -29,6 +29,8 @@ function viewCart() {
       var price = cart[i][item];}
       if (cart.length === 1) {
       console.log("In your cart, you have " + item + " at $" + price + ".")
+    } else if (cart.length === 2) {
+      console.log(item[0] price[0] item[1])
     }
     }
   }
