@@ -25,9 +25,9 @@ function viewCart() {
     return;
   } else {
     for (var i = 0; i < cart.length; i++ ) {
-      for (var itemPrice in cart[i]) {
+      for (var item in cart[i]) {
       var price = cart[i][itemPrice];
-      console.log("In your cart, you have " + itemPrice + " at $" + [i] + ".")
+      console.log("In your cart, you have " + item + " at $" + [itemPrice] + ".")
     }
   }
 }
