@@ -19,7 +19,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  
+
 var intro = "In your cart, you have";
 
   if (cart.length === 0) {
