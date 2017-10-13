@@ -30,7 +30,7 @@ function viewCart() {
       if (cart.length === 1) {
       console.log("In your cart, you have " + item + " at $" + price + ".")
     } else if (cart.length === 2) {
-      console.log(item[0] price[0] item[1])
+      console.log(item[0] price item[1])
     }
     }
   }
