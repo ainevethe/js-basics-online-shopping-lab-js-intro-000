@@ -22,6 +22,10 @@ function viewCart() {
 
   var cartItems = [];
 
+  if (cart.length <1) {
+    console.log("Your shopping cart is empty.")
+  }
+
   for (var i = 0; i < cart.length; i++) {
     var item = Object.keys(cart[i])[0];
     var itemPrice = cart[i][item]
