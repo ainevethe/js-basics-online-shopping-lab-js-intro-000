@@ -23,10 +23,9 @@ function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.")
     return;
-  } else {
+  } else if (cart.length < 2){
 
-  for (var i = 0; i < cart.length; i++) {
-    console.log(" In your cart, you have " + cart + " at $" + [i] + ".")
+    console.log(" In your cart, you have " + (Object.keys(cart)) + " at $" + [i] + ".")
   }
 }
 }
