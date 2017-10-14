@@ -52,6 +52,7 @@ for(var i = 0; i < cart.length; i++) {
     total += cart[i][item]
   }
 }
+return total;
 }
 
 function removeFromCart(item) {
