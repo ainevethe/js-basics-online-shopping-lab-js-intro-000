@@ -50,6 +50,7 @@ function total() {
 
     for (var i = 0; i < cart.length; i++);{
     totalPrice.push(prices);
+    prices + [i]
   }
   console.log()
 }
