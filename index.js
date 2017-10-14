@@ -45,16 +45,13 @@ function viewCart() {
 
 
 function total() {
-  var totalPrice = [];
+  var total = 0;
 
-  for (var i = 0; i < cart.length; i++) {
-    var item = Object.keys(cart[i])[0];
-    var itemPrice = cart[i][item]}
-
-    for (var i = 0; i < cart.length; i++);{
-    totalPrice.push(itemPrice);
+for(var i = 0; i < cart.length; i++) {
+  for (var item in cart[i]){
+    total += cart[i][item]
   }
-  console.log()
+}
 }
 
 function removeFromCart(item) {
