@@ -45,8 +45,10 @@ function viewCart() {
 
 
 function total() {
-    var totalPrice = [];
-    var prices = cart[i][item];
+    
+  for (var i = 0; i < cart.length; i++) {
+    var item = Object.keys(cart[i])[0];
+    var itemPrice = cart[i][item]}
 
     for (var i = 0; i < cart.length; i++);{
     totalPrice.push(prices);
